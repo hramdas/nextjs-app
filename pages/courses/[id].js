@@ -6,16 +6,16 @@
  }
 
  const CoursePage = (props) => {
-     //console.log(props)
+     console.log(props)
      if(typeof window === 'undefined'){
          return <p>Loading ....</p>
      }
-  return <div>
+  return <>
 
       <h1>Inside dynamic course page </h1>
       <h1>{data[props.router.query.id]} Course</h1>
 
-    </div>;
+    </>
 };
 
 export default withRouter(CoursePage)

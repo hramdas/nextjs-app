@@ -2,6 +2,7 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 
 const Index = (props) => {
+    console.log(props)
     return <div>
             <h2>Courses</h2>
             <Link href="/about">Go to About</Link>
@@ -12,6 +13,7 @@ const Index = (props) => {
 }
 
 export const getStaticProps = async ()=>{
+    
     return{
         props : {
             courses : ["Web Dev", "Android"]
